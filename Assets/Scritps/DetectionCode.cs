@@ -16,8 +16,11 @@ public class DetectionCode : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
+		// **Actions if seen**
 		if (detector == true)
 			Debug.Log ("Inside");
+
+		// **Actions if NOT seen**
 		else if (detector == false)
 			Debug.Log("Outside");
 	}
