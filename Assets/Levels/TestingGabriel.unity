@@ -288,8 +288,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.05
-  Horizontal: {x: 0, y: 0}
-  Vertical: {x: 0, y: 0}
+  mycamera: {fileID: 570379785}
 --- !u!212 &578162318
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -14,6 +14,7 @@ public class LaserIO : MonoBehaviour {
 		
 	}
 	void OnBecameVisible() {
+		Debug.Log ("is reading");
 		Laser.SetActive (true);
 	}
 	void OnBecameInvisible() {
