@@ -7,8 +7,6 @@ public class CameraMovement : MonoBehaviour
 
 	public float maxFOV = 160;
 	public float minFOV = 0;
-	public Transform target;
-	public Camera cam;
 	void Start () 
 	{
 		transform.position = new Vector3 (transform.position.x, transform.position.y, -5); // Initial Position
@@ -38,12 +36,6 @@ public class CameraMovement : MonoBehaviour
 			transform.position =  new Vector3(transform.position.x,transform.position.y + 1, transform.position.z);
 
 		// **Detection Code
-		{
-			Vector3 viewPos = cam.WorldToViewportPoint(target.position);
-			if (viewPos.x < 0.0F)
-				print("Out of Bounds Left");
-			else if (viewPos.x > 1.0F)
-				print("Out of Bounds! Right");
-		}
+	
 	}
 }
