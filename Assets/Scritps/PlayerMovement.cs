@@ -33,11 +33,11 @@ public class PlayerMovement : MonoBehaviour {
 		}
 	}	
 
-	void respawn(){
+	public void respawn(){
 		transform.position = checkpoint;
 	}
 
-	void save_checkpoint(){
+	public void save_checkpoint(){
 		checkpoint = transform.position;
 	}
 	// Update is called once per frame

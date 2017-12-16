@@ -13,9 +13,10 @@ public class Laser : MonoBehaviour {
 	void Update () {
 		
 	}
-	void OnTrigger2DEnter(Collider2D col){
+	void OnTriggerEnter2D(Collider2D col){
+		Debug.Log ("There's a collision");
 		if (col.gameObject.tag == "Player") {
-			Debug.Log ("There's a Player in the road");
+			col.gameObject.GetComponent<PlayerMovement> ().respawn ();
 		}
 	}
 
