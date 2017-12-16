@@ -180,7 +180,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 538086798}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.28, y: 4.8, z: 0}
+  m_LocalPosition: {x: 6.56, y: 7.25, z: 0}
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_Children: []
   m_Father: {fileID: 0}
@@ -268,7 +268,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 649526442}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.68, y: 5.92, z: 0}
+  m_LocalPosition: {x: 1.33, y: 5.99, z: 0}
   m_LocalScale: {x: 10, y: 100, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
@@ -445,7 +445,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 767663602}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.51, y: 0.37, z: 0}
+  m_LocalPosition: {x: -13.9, y: 0.37, z: 0}
   m_LocalScale: {x: 167.7497, y: 20, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
@@ -464,7 +464,7 @@ GameObject:
   - component: {fileID: 795750275}
   - component: {fileID: 795750276}
   m_Layer: 0
-  m_Name: Player - Circle
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -521,7 +521,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 795750271}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.04, y: -1.96, z: 0}
+  m_LocalPosition: {x: 1.21, y: -4.53, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children:
   - {fileID: 1809071863}
@@ -701,7 +701,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1769197629}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.25, y: 0.51, z: 0}
+  m_LocalPosition: {x: 16.6, y: 0.51, z: 0}
   m_LocalScale: {x: 167.7497, y: 20, z: 0}
   m_Children: []
   m_Father: {fileID: 0}

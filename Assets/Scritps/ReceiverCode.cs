@@ -5,16 +5,26 @@ using UnityEngine;
 public class ReceiverCode : MonoBehaviour {
 
 	public GameObject targetGO;
-
 	private DetectionCode detectionCode;
-	// Use this for initialization
+	bool isInside;
+
 	void Start () 
 	{
 		// **Selects the DetectionCode script**
 		detectionCode = targetGO.GetComponent<DetectionCode> ();
 	}
+
+
+	void OnTriggerEnter2D(Collider2D col)
+	{
+		Debug.Log ("There's a collision");
+		if (col.gameObject.tag == "Player") 
+		{
+			isInside = true;
+		}
+	}
 	
-	// Update is called once per frame
+
 	void Update () 
 	{
 		// **Block Receives TRUE information**
