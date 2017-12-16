@@ -6,19 +6,20 @@ public class DetectionCode : MonoBehaviour {
 
 	public bool detector;
 
+
 	// Use this for initialization
 	void Start () 
 	{
 		
 	}
-	
+
 	// Update is called once per frame
 	void Update () 
 	{
 		if (detector == true)
 			Debug.Log ("Inside");
 		else if (detector == false)
-			Debug.Log ("Outside");
+			Debug.Log("Outside");
 	}
 
 	void OnBecameVisible()
