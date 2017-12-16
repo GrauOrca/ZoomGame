@@ -2,20 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraMovement : MonoBehaviour {
+public class CameraMovement : MonoBehaviour 
+{
 
 	public float maxFOV = 160;
 	public float minFOV = 0;
-	// Use this for initialization
+	public Transform target;
+	Camera cam;
 	void Start () 
 	{
-		transform.position = new Vector3 (transform.position.x, transform.position.y, -5);
+		transform.position = new Vector3 (transform.position.x, transform.position.y, -5); // Initial Position
 	}
 
-	// Update is called once per frame
+
 	void Update () 
 	{
+		// **Zoom Code**
 		var d = Input.GetAxis ("Mouse ScrollWheel");
+
 		if ((d > 0f) && ( Camera.main.fieldOfView < maxFOV))
 			Camera.main.fieldOfView = Camera.main.fieldOfView + 10;
 			// Camera.main.fieldOfView = Mathf.Lerp (Camera.main.fieldOfView, Camera.main.fieldOfView + 10, 2*Time.deltaTime);
@@ -23,6 +27,7 @@ public class CameraMovement : MonoBehaviour {
 			Camera.main.fieldOfView = Camera.main.fieldOfView - 10;
 			// Camera.main.fieldOfView = Mathf.Lerp (Camera.main.fieldOfView, Camera.main.fieldOfView - 10, 2*Time.deltaTime);
 
+		// **Camera Movement Code** 
 		if (Input.GetKeyDown("d"))
 			transform.position =  new Vector3(transform.position.x + 1,transform.position.y, transform.position.z);
 		if (Input.GetKeyDown("a"))
@@ -32,6 +37,13 @@ public class CameraMovement : MonoBehaviour {
 		if (Input.GetKeyDown("w"))
 			transform.position =  new Vector3(transform.position.x,transform.position.y + 1, transform.position.z);
 
-
-			}
+		// **Detection Code
+		{
+			Vector3 viewPos = cam.WorldToViewportPoint(target.position);
+			if (viewPos.x < 0.0F)
+				print("Out of Bounds Left");
+			else if (viewPos.x > 1.0F)
+				print("Out of Bounds! Right");
+		}
 	}
+}
