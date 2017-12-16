@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class LaserIO : MonoBehaviour {
 	// Use this for initialization
+	public GameObject Laser;
+	public bool visible;
 	void Start () {
 	}
 
@@ -12,6 +14,9 @@ public class LaserIO : MonoBehaviour {
 		
 	}
 	void OnBecameVisible() {
-		Debug.Log ("I can be seen");
+		Laser.SetActive (true);
+	}
+	void OnBecameInvisible() {
+		Laser.SetActive (false);
 	}
 }
