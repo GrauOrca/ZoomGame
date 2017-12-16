@@ -8,7 +8,7 @@ public class CameraMovement : MonoBehaviour
 	public float maxFOV = 160;
 	public float minFOV = 0;
 	public Transform target;
-	Camera cam;
+	public Camera cam;
 	void Start () 
 	{
 		transform.position = new Vector3 (transform.position.x, transform.position.y, -5); // Initial Position

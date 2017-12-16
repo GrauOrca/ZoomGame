@@ -492,3 +492,4 @@ MonoBehaviour:
   maxFOV: 160
   minFOV: 20
   target: {fileID: 538086800}
+  cam: {fileID: 1809071862}
